@@ -25,10 +25,11 @@ var router = express.Router();
 
 router.use('/', (req, res, next) => {
     const compareTo = req.protocol + '://' + req.hostname + ':' + req.app.get('port');
-    if (req.headers.origin && req.headers.origin !== compareTo) {
-        res.status(403).send('Forbidden Cross Origin Request');
-        return;
-    }
+    if (req.headers.origin && req.headers.origin !== compareTo) 
+        console.log(req.headers.origin, compareTo);
+        // res.status(403).send('Forbidden Cross Origin Request');
+        // return;
+    
 
     next();
 }, user.requireLogIn);

@@ -74,7 +74,7 @@ $(() => {
         return self;
     }
 
-    const developerKey = document.body.dataset.developerKey;
+    const developerKey = '897d9c2df51d80eb583327b4f4c1be108d5bcde8ee97f4308ecc6fe08e74f194';
     const url = getThingpedia() + '/api/devices?developer_key=' + developerKey;
     $.get(url, (factoryList) => {
 

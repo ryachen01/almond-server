@@ -96,7 +96,7 @@ router.post('/delete', user.requireLogIn, (req, res, next) => {
 router.get('/oauth2/:kind', user.redirectLogIn, (req, res, next) => {
   const kind = req.params.kind;
   const redirect = req.protocol + '://' + req.hostname + ':' + req.app.get('port') + Config.BASE_URL;
-  const url = `https://thingengine.stanford.edu/proxy?redirect=${redirect}&kind=${kind}`;
+  const url = `http://127.0.0.1:8080/proxy?redirect=${redirect}&kind=${kind}`;
   res.redirect(url);
 
 });

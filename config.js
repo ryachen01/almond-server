@@ -42,7 +42,7 @@ module.exports.BASE_URL = process.env.THINGENGINE_BASE_URL || '';
 
   NOTE: host-based authentication is not compatible with DB encryption.
 */
-module.exports.HOST_BASED_AUTHENTICATION = process.env.THINGENGINE_HOST_BASED_AUTHENTICATION || 'local-ip';
+module.exports.HOST_BASED_AUTHENTICATION = process.env.THINGENGINE_HOST_BASED_AUTHENTICATION || 'insecure';
 
 /**
   Enable password-based DB encryption.
@@ -60,4 +60,3 @@ module.exports.SEMPRE_URL = process.env.THINGENGINE_NLP_URL || 'https://almond-n
 module.exports.THINGPEDIA_URL = process.env.THINGPEDIA_URL || 'https://thingpedia.stanford.edu/thingpedia';
 module.exports.MS_SPEECH_RECOGNITION_PRIMARY_KEY = 'de1f02817356494483ba502b2ce95f6f';
 module.exports.MS_SPEECH_RECOGNITION_SECONDARY_KEY = '3dc6ce0b832940f0b0c984a1517c457e';
-

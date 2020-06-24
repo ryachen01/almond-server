@@ -421,7 +421,7 @@ class ServerPlatform extends Tp.BasePlatform {
 
     // Get the ThingPedia developer key, if one is configured
     getDeveloperKey() {
-        return this._prefs.get('developer-key');
+        return '897d9c2df51d80eb583327b4f4c1be108d5bcde8ee97f4308ecc6fe08e74f194';
     }
 
     // Change the ThingPedia developer key, if possible
